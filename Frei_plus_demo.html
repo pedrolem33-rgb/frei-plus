@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Frei+ — Conecta-te ao que realmente importa</title>
+  <style>
+*{box-sizing:border-box}body{margin:0;background:#0b0b0b;color:#f5f5f5;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}.hidden{display:none!important}.screen{min-height:100vh}.auth-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;background:radial-gradient(circle at 50% 20%,#292929 0,#0b0b0b 48%)}.brand-mark{width:110px;height:110px;border-radius:30px;background:#f5f5f5;color:#080808;display:grid;place-items:center;font-size:62px;font-weight:900;font-style:italic;box-shadow:0 18px 60px #000}.brand-mark span{font-style:normal;font-size:35px;margin-left:-5px}.auth-screen h1{font-size:42px;margin:18px 0 4px}.auth-screen>p{color:#aaa;margin:0 0 30px}.auth-card{width:min(390px,100%);background:#151515;border:1px solid #2b2b2b;padding:24px;border-radius:22px}.auth-card input{width:100%;padding:15px;border-radius:12px;border:1px solid #333;background:#0c0c0c;color:white;outline:none;margin-bottom:12px}.primary,.secondary{width:100%;padding:14px;border-radius:12px;border:0;font-weight:700}.primary{background:#fff;color:#080808}.secondary{background:transparent;color:#fff;border:1px solid #555}.or{text-align:center;color:#777;margin:14px}.topbar{height:64px;border-bottom:1px solid #242424;display:flex;align-items:center;justify-content:space-between;padding:0 18px;position:sticky;top:0;background:#0b0b0bf2;backdrop-filter:blur(14px);z-index:5}.mini-brand{font-size:26px;font-style:italic}.mini-brand span{font-style:normal;margin-left:2px}.top-actions{display:flex;gap:8px}.top-actions button{background:none;border:0;color:#fff;font-size:25px}.page{max-width:650px;margin:auto;padding:18px 16px 100px}.stories{display:flex;gap:15px;overflow:auto;padding:4px 0 18px}.story{min-width:66px;text-align:center;font-size:11px;color:#bbb}.avatar{width:58px;height:58px;border-radius:50%;border:2px solid #fff;background:linear-gradient(135deg,#444,#111);display:grid;place-items:center;margin:auto auto 6px;font-weight:800}.card{background:#151515;border:1px solid #292929;border-radius:18px;margin:12px 0;overflow:hidden}.post-head{display:flex;align-items:center;gap:10px;padding:14px}.post-head .avatar{width:40px;height:40px;margin:0}.meta{flex:1}.meta b{display:block}.meta span{font-size:12px;color:#888}.dots{background:none;border:0;color:#aaa}.post-text{padding:0 14px 14px;line-height:1.45}.post-image{height:300px;background:linear-gradient(135deg,#303030,#101010);display:grid;place-items:center;font-size:60px}.actions{display:flex;gap:20px;padding:12px 14px;border-top:1px solid #292929}.actions button{background:none;border:0;color:#ddd}.actions .liked{color:#fff;font-weight:800}.section-title{font-size:26px;margin:12px 0 18px}.search{width:100%;background:#171717;border:1px solid #303030;border-radius:13px;color:#fff;padding:13px}.chips{display:flex;gap:8px;overflow:auto;margin:14px 0}.chip{white-space:nowrap;border:1px solid #444;border-radius:30px;padding:8px 12px;color:#ddd;background:#151515}.people{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.person{background:#151515;border:1px solid #292929;border-radius:16px;padding:15px;text-align:center}.person .avatar{width:70px;height:70px}.follow{border:0;border-radius:9px;background:#fff;color:#111;padding:9px 18px;font-weight:700}.profile-cover{height:160px;background:linear-gradient(120deg,#333,#0c0c0c);border-radius:18px 18px 0 0}.profile-main{background:#151515;border:1px solid #292929;border-top:0;border-radius:0 0 18px 18px;padding:0 18px 18px}.profile-main .avatar{width:88px;height:88px;margin:-44px 0 10px;border:4px solid #151515}.stats{display:flex;gap:28px;margin:18px 0}.stats b{display:block}.stats span{color:#888;font-size:12px}.profile-actions{display:flex;gap:8px}.profile-actions button{flex:1;padding:10px;border-radius:10px;border:1px solid #444;background:#111;color:#fff}.notice{padding:15px;border-bottom:1px solid #292929;display:flex;gap:12px;align-items:center}.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:70px;background:#0c0c0cf5;border-top:1px solid #292929;display:flex;justify-content:space-around;align-items:center;z-index:10;backdrop-filter:blur(16px)}.bottom-nav button{background:none;border:0;color:#aaa;font-size:22px;display:flex;flex-direction:column;align-items:center;gap:3px}.bottom-nav button.active{color:#fff}.bottom-nav small{font-size:9px}.bottom-nav .create{width:48px;height:48px;border-radius:50%;background:#fff;color:#111;font-size:30px;line-height:1}.empty{color:#777;text-align:center;padding:40px}.modal{position:fixed;inset:0;background:#000b;display:grid;place-items:center;z-index:20;padding:20px}.modal-card{background:#171717;border:1px solid #333;border-radius:20px;padding:20px;width:min(430px,100%)}textarea{width:100%;min-height:130px;background:#0d0d0d;border:1px solid #333;color:#fff;border-radius:12px;padding:12px;resize:vertical}.modal-actions{display:flex;gap:10px;margin-top:12px}.modal-actions button{flex:1;padding:12px;border-radius:10px;border:1px solid #444;background:#111;color:#fff}.modal-actions .primary{background:#fff;color:#111;border:0}@media(min-width:800px){.bottom-nav{left:50%;transform:translateX(-50%);width:650px;border-radius:20px 20px 0 0}.topbar{padding:0 calc((100% - 650px)/2 + 18px)}}
+</style>
+</head>
+<body>
+<div id="app">
+  <section id="auth" class="screen auth-screen">
+    <div class="brand-mark">F<span>+</span></div>
+    <h1>Frei+</h1>
+    <p>Conecta-te ao que realmente importa.</p>
+    <div class="auth-card">
+      <input id="loginName" placeholder="O teu nome" autocomplete="name">
+      <button class="primary" onclick="enterApp()">Entrar</button>
+      <div class="or">ou</div>
+      <button class="secondary" onclick="enterApp()">Criar conta</button>
+    </div>
+  </section>
+
+  <section id="social" class="hidden">
+    <header class="topbar">
+      <div class="mini-brand"><b>F</b><span>+</span></div>
+      <div class="top-actions">
+        <button aria-label="Pesquisar" onclick="showPage('discover')">⌕</button>
+        <button aria-label="Perfil" onclick="showPage('profile')">◉</button>
+      </div>
+    </header>
+
+    <main id="content"></main>
+
+    <nav class="bottom-nav">
+      <button data-page="home" onclick="showPage('home')">⌂<small>Início</small></button>
+      <button data-page="discover" onclick="showPage('discover')">⌕<small>Descobrir</small></button>
+      <button class="create" onclick="createPost()">＋</button>
+      <button data-page="notifications" onclick="showPage('notifications')">♡<small>Notificações</small></button>
+      <button data-page="profile" onclick="showPage('profile')">◉<small>Perfil</small></button>
+    </nav>
+  </section>
+</div>
+<script>
+const state={name:localStorage.getItem("freiName")||"",page:"home",liked:new Set()};
+const posts=[
+ {user:"Lucas",handle:"@lucas",time:"2 h",text:"Hoje foi um dia incrível! ✨ Obrigado por tudo!",image:"🌅",likes:128,comments:24},
+ {user:"Ana",handle:"@ana",time:"4 h",text:"A vida é melhor quando a gente se permite ser feliz. ♡",image:"✦",likes:86,comments:13},
+ {user:"Rafael",handle:"@rafael",time:"6 h",text:"Novas histórias, novas pessoas, novas possibilidades.",image:"🌙",likes:54,comments:8}
+];
+function enterApp(){const n=document.getElementById("loginName").value.trim()||"Visitante";state.name=n;localStorage.setItem("freiName",n);document.getElementById("auth").classList.add("hidden");document.getElementById("social").classList.remove("hidden");showPage("home")}
+function showPage(page){state.page=page;render();document.querySelectorAll(".bottom-nav button[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page))}
+function render(){const c=document.getElementById("content"); if(state.page==="home")c.innerHTML=home(); if(state.page==="discover")c.innerHTML=discover(); if(state.page==="profile")c.innerHTML=profile(); if(state.page==="notifications")c.innerHTML=notifications()}
+function home(){return `<div class="page"><div class="stories">${["Tu","Lucas","Ana","Rafael","Maria"].map((x,i)=>`<div class="story"><div class="avatar">${i?"${x[0]}":"+"}</div>${i?x:"Criar story"}</div>`).join("")}</div><h2 class="section-title">Para ti</h2>${posts.map((p,i)=>post(p,i)).join("")}</div>`}
+function post(p,i){return `<article class="card"><div class="post-head"><div class="avatar">${p.user[0]}</div><div class="meta"><b>${p.user}</b><span>${p.handle} · ${p.time}</span></div><button class="dots">•••</button></div><div class="post-text">${p.text}</div><div class="post-image">${p.image}</div><div class="actions"><button class="${state.liked.has(i)?"liked":""}" onclick="like(${i})">♡ ${p.likes+(state.liked.has(i)?1:0)}</button><button>💬 ${p.comments}</button><button>↗ Partilhar</button><button>🔖</button></div></article>`}
+function like(i){state.liked.has(i)?state.liked.delete(i):state.liked.add(i);render()}
+function discover(){return `<div class="page"><h2 class="section-title">Descobrir</h2><input class="search" placeholder="🔍 Procurar pessoas, publicações ou hashtags..."><div class="chips">${["🔥 Em destaque","🎨 Criatividade","🎵 Música","🎮 Jogos","📚 Educação","😂 Entretenimento"].map(x=>`<span class="chip">${x}</span>`).join("")}</div><h3>Pessoas que talvez conheças</h3><div class="people">${["Maria","João","Letícia","Pedro"].map(x=>`<div class="person"><div class="avatar">${x[0]}</div><b>${x}</b><p style="color:#888;font-size:12px">@${x.toLowerCase()}</p><button class="follow">Seguir</button></div>`).join("")}</div><h3 style="margin-top:25px">Tendências</h3><div class="card"><div class="notice">#fotografia <span>98 mil publicações</span></div><div class="notice">#música <span>78 mil publicações</span></div><div class="notice">#viagens <span>64 mil publicações</span></div></div></div>`}
+function profile(){const n=state.name||"Pedro";return `<div class="page"><div class="card"><div class="profile-cover"></div><div class="profile-main"><div class="avatar">${n[0].toUpperCase()}</div><h2>${n}</h2><p style="color:#999">@${n.toLowerCase().replace(/\\s+/g,"")}</p><p>Sonhador, determinado e sempre em busca de novas histórias. ✨</p><div class="stats"><div><b>32</b><span>Publicações</span></div><div><b>245</b><span>Seguidores</span></div><div><b>180</b><span>A seguir</span></div></div><div class="profile-actions"><button>Editar perfil</button><button>Partilhar</button></div></div></div><h3>Publicações</h3>${posts.slice(0,2).map((p,i)=>post(p,i)).join("")}</div>`}
+function notifications(){return `<div class="page"><h2 class="section-title">Notificações</h2><div class="card"><div class="notice"><div class="avatar">M</div><div><b>Maria</b> curtiu a tua publicação.<br><small style="color:#777">há 5 min</small></div></div><div class="notice"><div class="avatar">J</div><div><b>João</b> começou a seguir-te.<br><small style="color:#777">há 18 min</small></div></div><div class="notice"><div class="avatar">A</div><div><b>Ana</b> comentou: “Adorei! ✨”<br><small style="color:#777">há 1 h</small></div></div></div><h3>Mensagens</h3><div class="card"><div class="notice">💬 <b>Lucas</b><span>Tá com saudades? 😄</span></div><div class="notice">💬 <b>Maria</b><span>Você: Até mais! ♡</span></div></div></div>`}
+function createPost(){document.body.insertAdjacentHTML("beforeend",`<div class="modal" id="postModal"><div class="modal-card"><h2>Criar publicação</h2><textarea id="newPost" placeholder="No que estás a pensar?"></textarea><div class="modal-actions"><button onclick="document.getElementById('postModal').remove()">Cancelar</button><button class="primary" onclick="publish()">Publicar</button></div></div></div>`)}
+function publish(){const t=document.getElementById("newPost").value.trim();if(t){posts.unshift({user:state.name||"Tu",handle:"@"+(state.name||"tu").toLowerCase().replace(/\\s+/g,""),time:"agora",text:t,image:"✦",likes:0,comments:0});state.liked.clear()}document.getElementById("postModal").remove();showPage("home")}
+if(state.name){document.getElementById("auth").classList.add("hidden");document.getElementById("social").classList.remove("hidden");render()}
+
+</script>
+</body>
+</html>
